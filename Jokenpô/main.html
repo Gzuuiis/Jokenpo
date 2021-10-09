@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpô</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr> <h3 class="title">Faça Sua Jogada:</h3> </tr>
+            <tr> 
+                <td class="escolhas"> <img name="pedra" onclick="jogar(this.name)" src="img/pedra.png" alt=""> </td>
+                <td class="escolhas"> <img name="papel" src="img/papel.png" onclick="jogar(this.name)" alt=""> </td>
+                <td class="escolhas"> <img name="tesoura" src="img/tesoura.png" onclick="jogar(this.name)" alt=""> </td>
+            </tr>
+        </table>
+
+        <h3 class="pontos">Pontos: <output id="pontosPlayer"> 0 </output></h3>
+        <div class="resultado" id="caixaresult"> <h3> Resultado: <output id="resultado"> 0 </output></h3> </div> 
+        <h3 class="pontosPC">Pontos: <output id="pontosPC"> 0 </output></h3>
+
+        <table>
+            <tr> 
+                <td class="escolhasPC" id="1"> <img name="pedra" src="img/pedra.png" alt=""> </td>
+                <td class="escolhasPC" id="2"> <img name="papel" src="img/papel.png" alt=""> </td>
+                <td class="escolhasPC" id="3"> <img name="tesoura" src="img/tesoura.png" alt=""> </td>
+            </tr>
+        </table>
+        <tr> <h3 class="title"> Jogada do PC:</h3></tr>
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
